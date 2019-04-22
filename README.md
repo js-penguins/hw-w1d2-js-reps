@@ -167,7 +167,17 @@ Feel free to test your code in repl.it or a local javascript file.
 *   - if b is between 75 and 100, print "top quartile"
 
 ```js
-// your answer here
+// var b = 81;
+
+if (b < 25){
+  console.log("bottom quartile");
+}else if(b<50 && b> 25){
+  console.log("lower quartile");
+}else if(b <75 && b>50){
+  console.log("upper quartile");
+}else if(b <100 && b> 75){
+  console.log("top quartile");
+}
 ```
 
 ## 6 - Loops:
