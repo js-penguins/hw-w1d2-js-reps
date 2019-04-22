@@ -17,10 +17,10 @@ then submit:
 Since we did not clone it, there is no need for ANY git commands in the console.  Just skip right ahead to the "open pull request" step (the little button below the clone button) and answer the usual submission questions:
 
 ```
-on a scale from 0 to 5, how complete is this homework?
-on a scale from 0 to 5, how comfortable were you with this assignment?
-what was a win you had with this assignment?
-what was a challenge you had with this assignment?
+on a scale from 0 to 5, how complete is this homework? 3
+on a scale from 0 to 5, how comfortable were you with this assignment? 3
+what was a win you had with this assignment? trying to understand the way it works.
+what was a challenge you had with this assignment? yes 
 other stuff on your mind? work with anyone? tell us about it! 
 ```
 
@@ -44,15 +44,24 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is (your answer here)
+var Letter = a;
+  if (Letter=a){ console.log("1")}
+    else if (Letter=b){ console.log("bongos")}
+      else if (Letter=c){ console.log("1")}
 ```
 2.  What is `b`?
 ```
-b is (your answer here)
+var Letter = b;
+  if (Letter=a){ console.log("bongos")}
+    else if (Letter=b){ console.log("bongos")}
+      else if (Letter=c){ console.log("true")}
 ```
 3.  What is `c`?
 ```
-c is (your answer here)
+var Letter = c;
+  if (Letter=a){ console.log("1")}
+    else if (Letter=b){ console.log("true")}
+      else if (Letter=c){ console.log("true")}
 ```
 
 Now run it and don't update your answers above.  Any surprises?  Don't worry about submitting wrong answers, it's all good :3
@@ -74,7 +83,7 @@ Result should be:
 ```
 
 ```js
-// your answer here
+// "Please " + "squeeze " +  "the " + "cheese"
 ```
 
 ## 3 - Variable Assignments
@@ -89,14 +98,14 @@ var num2 = 10;
 Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
-// your solution here
+// var num3 = num1 + num2
 ```
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log(/* your answer here */)
+console.log(" the sum of ",  num1 , " and " , num2 , " is " , num3)
 ```
 
 ## 4 - Comparisons
@@ -118,14 +127,14 @@ h) 9 !== 8 + 1
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) false
+b) true 
+c) false
+d) false
+e) false
+f) false
+g) true
+h) false
 ```
 
 ### 4b: multi-operator:
@@ -144,14 +153,14 @@ h) (12 !== 12) || (9 !== 8 + 1)
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) false
+b) false 
+c) false
+d) true
+e) true
+f) true
+g) true
+h) false
 ```
 
 ## 5 - Conditionals:
@@ -166,7 +175,19 @@ Feel free to test your code in repl.it or a local javascript file.
 *   - if b is between 75 and 100, print "top quartile"
 
 ```js
-// your answer here
+// var b =90;
+if( b<25){
+    console.log(" bottom quartile ")
+    }
+    else if(b>= 25 && b<= 50){
+        console.log("lower quartile")} 
+  
+    else if(b>=50 && b<=75){
+        console.log("upper quartile")} 
+            
+    else if(b>=75 && b<=100){
+            console.log("top quartile")
+        }
 ```
 
 ## 6 - Loops:
@@ -189,18 +210,20 @@ Feel free to test your code in repl.it or a local javascript file.
 *  Create a variable `favoriteMovies` that is equal to an array of your 5 favorite movies:
 
 ```js
-// your answer here
+//var movies = ['21jumpstreet', 'taken', 'central intelligence', 'sing', 'zootopia'];
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
-// your answer here
+// movies[2] = "toy story";
+console.log(movies)
 ```
 
 *   How would you remove the last movie from that array?
 ```js
-// your answer here
+// movies.pop()
+console.log(movies);
 ```
 
 ### 7b - Yell at the Ninja Turtles
@@ -211,7 +234,8 @@ Create an array with the members of the ninja turtles (Donatello, Leonardo, Raph
 Use a for loop to call .toUpperCase() on each of them and print out the result.
 
 ```js
-// your answer here
+// var turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+
 ```
 
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
