@@ -168,7 +168,6 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
 // var b = 81;
-
 if (b < 25){
   console.log("bottom quartile");
 }else if(b<50 && b> 25){
