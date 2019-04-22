@@ -44,15 +44,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is (your answer here)
+a is 'bongos'
 ```
 2.  What is `b`?
 ```
-b is (your answer here)
+b is true
 ```
 3.  What is `c`?
 ```
-c is (your answer here)
+c is 'bongos'
 ```
 
 Now run it and don't update your answers above.  Any surprises?  Don't worry about submitting wrong answers, it's all good :3
@@ -75,6 +75,7 @@ Result should be:
 
 ```js
 // your answer here
+console.log(firstWord+' '+secondWord+' '+thirdWord+' '+fourthWord);
 ```
 
 ## 3 - Variable Assignments
@@ -90,13 +91,15 @@ Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
 // your solution here
+var num3= num1+num2 
+
 ```
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log(/* your answer here */)
+console.log('The sum of '+ num1+ ' and '+num2+' is '+ num3);
 ```
 
 ## 4 - Comparisons
@@ -118,14 +121,14 @@ h) 9 !== 8 + 1
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) false
+b) true 
+c) false
+d) false
+e) false
+f) false
+g) true
+h) false
 ```
 
 ### 4b: multi-operator:
@@ -144,14 +147,14 @@ h) (12 !== 12) || (9 !== 8 + 1)
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) true
+b) false
+c) false
+d) true
+e) true
+f) true
+g) true
+h) false
 ```
 
 ## 5 - Conditionals:
@@ -167,6 +170,24 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
 // your answer here
+
+
+var b=Math.ceil(Math.random()*100);
+
+if (b<25)
+console.log('bottom quartile');
+else if (b>=25 && b<50)
+console.log('lower quartile');
+else if (b>=50 && b<75)
+console.log('upper quartile');
+else if (b>=75 && b<=100)
+console.log('top quartile');
+
+
+
+console.log(b);
+
+
 ```
 
 ## 6 - Loops:
@@ -178,6 +199,21 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
   // your answer here 
+  
+  var rtext=['...human...why you taking pictures of me?...','...the catnip made me do it...','...why does the red dot always get away...']
+
+var t = 'Love me, pet me! HSSSSSS!'
+for (var i=0; i <20;i++){
+ console.log(i) // for counting only
+console.log(t)
+if (i%2==0){
+var r=Math.floor(Math.random()*rtext.length);
+//console.log(r);
+console.log(rtext[r]);
+
+}
+}
+
 ```
 
 ## 7 - Arrays:
@@ -190,17 +226,22 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
 // your answer here
+
+var favoriteMovies=['interstellar','PK','inception','3 idiots','mr.nobody']
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
 // your answer here
+favoriteMovies[2]= `Toy Story 3`;
 ```
 
 *   How would you remove the last movie from that array?
 ```js
 // your answer here
+
+favoriteMovies.pop()
 ```
 
 ### 7b - Yell at the Ninja Turtles
@@ -212,12 +253,32 @@ Use a for loop to call .toUpperCase() on each of them and print out the result.
 
 ```js
 // your answer here
+
+ninjaturtles=['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+
+for (var i=0; i <ninjaturtles.length; i++ )
+ console.log(ninjaturtles[i].toUpperCase() );
+ 
 ```
 
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 ```js
 // not required, but if you want a challenge!
 // your answer here
+
+ninjaturtles=['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+
+for (var i=0; i <ninjaturtles.length; i++ ){
+for (var j=0; j <ninjaturtles[i].length; j++ )
+{
+   var chars = ninjaturtles[i].toLowerCase().split("");
+  for (var k = 0; k < chars.length; k += 2) {
+    chars[k] = chars[k].toUpperCase();
+  }
+ ninjaturtles[i]= chars.join("");
+}
+console.log(ninjaturtles[i] );
+}
 ```
 
 ## SUPER BONUSES 
