@@ -118,14 +118,14 @@ h) 9 !== 8 + 1
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) false 
+b)  ture 
+c) false 
+d) false
+e) false
+f) false
+g) true
+h) alse
 ```
 
 ### 4b: multi-operator:
@@ -144,14 +144,14 @@ h) (12 !== 12) || (9 !== 8 + 1)
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) true
+b)  false
+c) false
+d) true
+e) true
+f) false
+g) true
+h) false
 ```
 
 ## 5 - Conditionals:
@@ -166,7 +166,16 @@ Feel free to test your code in repl.it or a local javascript file.
 *   - if b is between 75 and 100, print "top quartile"
 
 ```js
-// your answer here
+// var b=Math.random()*100;
+if ( b < 25 ){
+    console.log("bottom quartile");
+}else if ( b > 25 && b < 50 ){
+    console.log("lower quartile"); 
+} else if ( b > 50 && b < 75 ){
+    console.log("upper quartile");
+}else if ( b > 75 && b < 100 ){
+    console.log("top quartile");
+}
 ```
 
 ## 6 - Loops:
@@ -177,7 +186,23 @@ Feel free to test your code in repl.it or a local javascript file.
 * For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 ```js
-  // your answer here 
+  // your answer here var m="Love me, pet me! HSSSSSS!";
+var m1="...human...why you taking pictures of me?...";
+var m2="...the catnip made me do it...";
+var m3="...why does the red dot always get away...";
+for (var i=1;i<=20;i++)
+{
+    console.log(m);
+    if (i%2===0)
+    {
+        if (i>=0&&i<8)
+        console.log(m1);
+        else if (i>=8&&i<15)
+        console.log(m2);
+        else if (i>=15&&i<=20)
+        console.log(m3);
+    }
+}
 ```
 
 ## 7 - Arrays:
@@ -189,18 +214,26 @@ Feel free to test your code in repl.it or a local javascript file.
 *  Create a variable `favoriteMovies` that is equal to an array of your 5 favorite movies:
 
 ```js
-// your answer here
+// var movies = ['movie1' , 'movie2' , 'movie3' , 'movie4' ,'movie5'] ;
+ movies[2] = 'Toy Story 3';
+console.log(movies);
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
-// your answer here
+// var movies = ['movie1' , 'movie2' , 'movie3' , 'movie4' ,'movie5'] ;
+movies[2] = 'Toy Story 3';
+ movies.pop();
+console.log(movies);
 ```
 
 *   How would you remove the last movie from that array?
 ```js
-// your answer here
+// var movies = ['movie1' , 'movie2' , 'movie3' , 'movie4' ,'movie5'] ;
+movies[2] = 'Toy Story 3';
+ movies.pop();
+console.log(movies);
 ```
 
 ### 7b - Yell at the Ninja Turtles
@@ -211,7 +244,8 @@ Create an array with the members of the ninja turtles (Donatello, Leonardo, Raph
 Use a for loop to call .toUpperCase() on each of them and print out the result.
 
 ```js
-// your answer here
+// var members = ["Donatello" , "Leonardo" , "mRaphael" ,"mMichaelangelo" ] ; 
+console.log(members[0].toUpperCase());
 ```
 
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
@@ -241,6 +275,16 @@ declare a variable argument and set it equal to 7.
 #####
 ######
 #######
+
+for ( i = 0 ; i <= 7 ; i ++ ){
+    var x = " ";
+    for ( j=0 ; j<= i ; j++){
+        x += "#";
+
+    }
+    console.log(x);
+}
+
 ```
 
 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
