@@ -44,15 +44,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is (your answer here)
+a is 'bongos'
 ```
 2.  What is `b`?
 ```
-b is (your answer here)
+b is true
 ```
 3.  What is `c`?
 ```
-c is (your answer here)
+c is 1
 ```
 
 Now run it and don't update your answers above.  Any surprises?  Don't worry about submitting wrong answers, it's all good :3
@@ -74,7 +74,7 @@ Result should be:
 ```
 
 ```js
-// your answer here
+console.log("please"+" "+"squeeze"+" "+"the"+" "+"cheese");
 ```
 
 ## 3 - Variable Assignments
@@ -84,19 +84,20 @@ Output a console log `The sum of 5 and 10 is 15` where the values for 5 and 10 a
 ```js
 var num1 = 5;
 var num2 = 10;
+
 ```
 
 Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
-// your solution here
+var num3 = num1+num2;
 ```
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log(/* your answer here */)
+console.log("The sum of"+" "+num1+" "+"and"+" "+num2+" "+"is"+" "+num3);
 ```
 
 ## 4 - Comparisons
@@ -118,14 +119,14 @@ h) 9 !== 8 + 1
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) Fulse
+b) True
+c) Fulse
+d) Fulse
+e) Fulse
+f) Fulse
+g) True
+h) Fulse
 ```
 
 ### 4b: multi-operator:
@@ -144,14 +145,14 @@ h) (12 !== 12) || (9 !== 8 + 1)
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) True
+b) Fulse
+c) True
+d) True
+e) True
+f) Fulse
+g) True
+h) Fulse
 ```
 
 ## 5 - Conditionals:
@@ -166,7 +167,20 @@ Feel free to test your code in repl.it or a local javascript file.
 *   - if b is between 75 and 100, print "top quartile"
 
 ```js
-// your answer here
+var b= Math.floor((Math.random() *100)+1)
+
+if(b<25){
+console.log("bottom quartile");}
+
+else if(b>25 && b<50){
+console.log("lower quartile");}
+
+else if(b>50 && b<75){
+console.log("upper quartile");}
+
+else {
+console.log("top quartile");}
+
 ```
 
 ## 6 - Loops:
@@ -177,8 +191,16 @@ Feel free to test your code in repl.it or a local javascript file.
 * For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 ```js
-  // your answer here 
-```
+var evenNum= ["...human...why you taking pictures of me?...","...the catnip made me do it...","...why does the red dot always get away..."]
+
+for(var i=0;i<=20;i++){
+
+if(i %2 ===0){
+console.log(evenNum[Math.floor(Math.random() *3)])
+}
+else{
+console.log("Love me, pet me! HSSSSSS!")}}
+
 
 ## 7 - Arrays:
 
@@ -189,18 +211,18 @@ Feel free to test your code in repl.it or a local javascript file.
 *  Create a variable `favoriteMovies` that is equal to an array of your 5 favorite movies:
 
 ```js
-// your answer here
+var favoriteMovies=['Lion','The girl on the train','Split','Bird box','The notebook'];
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
-// your answer here
+favoriteMovies[2]="Toy Story 3";
 ```
 
 *   How would you remove the last movie from that array?
 ```js
-// your answer here
+favoriteMovies.pop();
 ```
 
 ### 7b - Yell at the Ninja Turtles
@@ -211,7 +233,9 @@ Create an array with the members of the ninja turtles (Donatello, Leonardo, Raph
 Use a for loop to call .toUpperCase() on each of them and print out the result.
 
 ```js
-// your answer here
+var Ninja= ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+for(var i=0;i<Ninja.length;i++);
+console.log(Ninja[i].toUpperCase());
 ```
 
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
