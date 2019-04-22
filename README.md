@@ -187,7 +187,11 @@ Feel free to test your code in repl.it or a local javascript file.
 * For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 ```js
-  // your answer here 
+  //var i = 0;
+for ( var i; i<20; i++){
+ let i = "Love me, pet me! HSSSSSS!";
+ console.log(i);
+ } 
 ```
 
 ## 7 - Arrays:
