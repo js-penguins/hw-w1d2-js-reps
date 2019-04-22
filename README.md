@@ -284,6 +284,7 @@ declare a variable argument and set it equal to 7.
 ########
 ```
 
+```
 var argument = 8;
   var line = "";
 for (var i = 1; i <= argument; i++) {
@@ -297,6 +298,7 @@ for (var i = 1; i <= argument; i++) {
 
   }
   console.log(line + "\n");
+  ```
 
 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
 
@@ -312,7 +314,7 @@ for (var i = 1; i <= argument; i++) {
  #######
 ########
 ```
-
+```
 var argument = 8;
   var line = "";
 for (var i = 0; i < argument; i++) {
@@ -326,7 +328,7 @@ for (var i = 0; i < argument; i++) {
     line+="\n";
   }
   console.log(line + "\n");
-
+```
 3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
 
 >Ex: `argument` is 7
@@ -341,7 +343,7 @@ for (var i = 0; i < argument; i++) {
 ##
 #
 ```
-
+```
 var argument = 8;
   var line = "";
 for (var i = argument; i >= 1; i--) {
@@ -356,7 +358,7 @@ for (var i = argument; i >= 1; i--) {
   }
 
   console.log(line + "\n");
-
+```
 4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.  This is also tricky.
 
 >Ex: `argument` is 7
@@ -371,7 +373,7 @@ for (var i = argument; i >= 1; i--) {
       ##
        #
 ```
-
+```
 var argument = 8;
   var line = "";
 for (var i = argument; i > 0; i--) {
@@ -385,10 +387,10 @@ for (var i = argument; i > 0; i--) {
     line+="\n";
   }
   console.log(line + "\n");
-
+```
 5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
 
-
+```
 var argument = 5;
   var line = "";
 for (var i = 1; i <= argument; i++) {
@@ -483,7 +485,7 @@ for (var i = argument; i > 0; i--) {
   ###
    ##
     #
-
+```
 # Due Date and Time:
 
 Your javascript exercises are due at 2am!
