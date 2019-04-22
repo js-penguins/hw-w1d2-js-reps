@@ -188,10 +188,23 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
 var i = 0;
-for ( var i; i<20; i++){
+for ( var i; i<20; i++)
+{
+  if (i % 6==0){
+    let i = Math.floor(Math.random() * 21);
+ console.log("...human...why you taking pictures of me?...");
+  }else if (i % 2==0){
+    let i = Math.floor(Math.random() * 21)
+    console.log("...the catnip made me do it...");
+  }else if (i % 20==0){
+    let i = Math.floor(Math.random() * 21);
+ console.log("...why does the red dot always get away...");
+  }
+  else{
  let i = "Love me, pet me! HSSSSSS!";
  console.log(i);
- } 
+  }
+}
 ```
 
 ## 7 - Arrays:
