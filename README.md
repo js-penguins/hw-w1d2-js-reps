@@ -44,15 +44,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is (your answer here)
+a is (bongos)
 ```
 2.  What is `b`?
 ```
-b is (your answer here)
+b is (true)
 ```
 3.  What is `c`?
 ```
-c is (your answer here)
+c is (1)
 ```
 
 Now run it and don't update your answers above.  Any surprises?  Don't worry about submitting wrong answers, it's all good :3
@@ -74,7 +74,7 @@ Result should be:
 ```
 
 ```js
-// your answer here
+// console.log(firstWord +" "+ secondWord +" "+ thirdWord +" "+ fourthWord);
 ```
 
 ## 3 - Variable Assignments
