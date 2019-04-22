@@ -273,7 +273,7 @@ declare a variable argument and set it equal to 7.
 >Ex: `argument` is 7
 
 
-```
+```js
 var argument = 7; 
 for (var i = 0; i <= argument ; i++) {
   console.log('#'.repeat(i))
