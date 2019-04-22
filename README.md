@@ -222,7 +222,7 @@ Feel free to test your code in repl.it or a local javascript file.
 *  Create a variable `favoriteMovies` that is equal to an array of your 5 favorite movies:
 
 ```js
-var favoriteMovies = ['GameOfThrons','Saw','Barbie','Mowgli','miniuns'];
+var favoriteMovies = ['Skyfall','Baywatch','the kinges man','Skyfall','venom'];
     console.log(favoriteMovies);
 ```
 
