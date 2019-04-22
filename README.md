@@ -96,8 +96,8 @@ Let's do this in parts:
 >The sum of 5 and 10 is 15
 
 ```js
-console.log("The sum of" +" "+ num1 +" "+ "and" +" "+ num2 +" "+ "is" +" "+ summed);
-or console.log("The sum of 5 and 10 is" +" "+ summed);
+console.log("The sum of" +" "+ num1 +" "+ "and" +" "+ num2 +" "+ "is" +" "+ num3);
+or console.log("The sum of 5 and 10 is" +" "+ num3);
 ```
 
 ## 4 - Comparisons
