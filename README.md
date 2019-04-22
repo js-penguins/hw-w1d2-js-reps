@@ -44,15 +44,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is (your answer here)
+a is ('bongos')
 ```
 2.  What is `b`?
 ```
-b is (your answer here)
+b is (true)
 ```
 3.  What is `c`?
 ```
-c is (your answer here)
+c is (bongos)
 ```
 
 Now run it and don't update your answers above.  Any surprises?  Don't worry about submitting wrong answers, it's all good :3
@@ -75,6 +75,7 @@ Result should be:
 
 ```js
 // your answer here
+console.log(firstWord + " " + secondWord + " " + thirdWord + " " + fourthWord )
 ```
 
 ## 3 - Variable Assignments
@@ -90,13 +91,14 @@ Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
 // your solution here
+var num3 = num1 + num2
 ```
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log(/* your answer here */)
+console.log(" the sum of ",  num1 , " and " , num2 , " is " , num3)
 ```
 
 ## 4 - Comparisons
@@ -118,18 +120,18 @@ h) 9 !== 8 + 1
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) false
+b) true
+c) false
+d) false
+e) false
+f) false
+g) true
+h) false
 ```
 
 ### 4b: multi-operator:
-```
+
 a) false || true
 b) false && true
 c) 'camel' === 'llama' && true
@@ -138,20 +140,20 @@ e) (true || false) && (true && true)
 f) (20 + 5 < 30) && ('woof' !== 'meow') 
 g) (81 / 9 === 9) && ('9' == 9)
 h) (12 !== 12) || (9 !== 8 + 1)
-```
+
 
 
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) true
+b) false
+c) false
+d) true
+e) true
+f) true
+g) true
+h) false
 ```
 
 ## 5 - Conditionals:
@@ -165,8 +167,25 @@ Feel free to test your code in repl.it or a local javascript file.
 *   - if b is between 50 and 75, print "upper quartile"
 *   - if b is between 75 and 100, print "top quartile"
 
+
 ```js
 // your answer here
+
+var b = Math.round(Math.random() * 100) 
+console.log(b);
+if (b <= 25) {
+  console.log("bottom quartile")
+  
+} else if (b > 25 && b <= 50) {
+  console.log(" lower quartile")
+
+} else if (b > 50 && b <= 75) {
+  console.log("upper quartile")
+
+} else if (b > 75 && b <= 100) {
+  console.log("upper quartile")
+
+}
 ```
 
 ## 6 - Loops:
@@ -178,6 +197,14 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
   // your answer here 
+  
+  var randWords = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+for (var i = 0 ; i < 20 ; i++) { 
+  console.log("Love me, pet me! HSSSSSS!")
+  if (i % 2 == 0) {
+    console.log(randWords[Math.floor(Math.random()* randWords.length)])
+  }
+}
 ```
 
 ## 7 - Arrays:
@@ -190,17 +217,24 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
 // your answer here
+
+var favoriteMovies = ['m1' , 'm2' ,'m3' ,'m4' ,'m5'];
+
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
 // your answer here
+
+favoriteMovies[2] = "Toy Story 3";
+
 ```
 
 *   How would you remove the last movie from that array?
 ```js
 // your answer here
+favoriteMovies.pop();
 ```
 
 ### 7b - Yell at the Ninja Turtles
@@ -212,6 +246,11 @@ Use a for loop to call .toUpperCase() on each of them and print out the result.
 
 ```js
 // your answer here
+var ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for (var i = 0 ; i < ninjaTurtles.length ; i++) {
+  ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
+}
+console.log(ninjaTurtles)
 ```
 
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
@@ -233,21 +272,24 @@ declare a variable argument and set it equal to 7.
 
 >Ex: `argument` is 7
 
-```
-#
-##
-###
-####
-#####
-######
-#######
+
+```js
+var argument = 7; 
+for (var i = 0; i <= argument ; i++) {
+  console.log('#'.repeat(i))
+}
 ```
 
 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
 
 >Ex: `argument` is 7
 
-```
+
+```js
+var argument = 7; 
+for (var i = 0; i <= argument ; i++) {
+  console.log(' '.repeat(argument - i) + '#'.repeat(i))
+}
       #
      ##
     ###
@@ -262,7 +304,11 @@ declare a variable argument and set it equal to 7.
 
 >Ex: `argument` is 7
 
-```
+```js
+var argument = 7; 
+for (var i = argument; i > 0 ; i--) {
+  console.log('#'.repeat(i))
+}
 #######
 ######
 #####
@@ -276,7 +322,11 @@ declare a variable argument and set it equal to 7.
 
 >Ex: `argument` is 7
 
-```
+```js
+var argument = 7; 
+for (var i = argument; i > 0 ; i--) {
+  console.log(' '.repeat(argument - i) + '#'.repeat(i))
+}
 #######
  ######
   #####
