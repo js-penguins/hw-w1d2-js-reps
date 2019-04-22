@@ -203,18 +203,22 @@ Feel free to test your code in repl.it or a local javascript file.
 *  Create a variable `favoriteMovies` that is equal to an array of your 5 favorite movies:
 
 ```js
-// your answer here
+//  var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
-// your answer here
+//var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
+favoriteMovies[2] = "Toy Story 3"
+console.log(favoriteMovies);
 ```
 
 *   How would you remove the last movie from that array?
 ```js
-// your answer here
+// var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
+favoriteMovies.pop();
+console.log(favoriteMovies);
 ```
 
 ### 7b - Yell at the Ninja Turtles
