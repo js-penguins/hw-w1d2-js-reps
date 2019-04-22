@@ -74,7 +74,7 @@ Result should be:
 ```
 
 ```js
-// console.log(firstWord +" "+ secondWord +" "+ thirdWord +" "+ fourthWord);
+console.log(firstWord +" "+ secondWord +" "+ thirdWord +" "+ fourthWord);
 ```
 
 ## 3 - Variable Assignments
@@ -89,7 +89,7 @@ var num2 = 10;
 Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
-// var num3 = num1+num2;
+var num3 = num1+num2;
 ```
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
@@ -167,7 +167,7 @@ Feel free to test your code in repl.it or a local javascript file.
 *   - if b is between 75 and 100, print "top quartile"
 
 ```js
-// var b = 81;
+var b = 81;
 if (b < 25){
   console.log("bottom quartile");
 }else if(b<50 && b> 25){
@@ -187,7 +187,7 @@ Feel free to test your code in repl.it or a local javascript file.
 * For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 ```js
-  //var i = 0;
+var i = 0;
 for ( var i; i<20; i++){
  let i = "Love me, pet me! HSSSSSS!";
  console.log(i);
@@ -203,20 +203,20 @@ Feel free to test your code in repl.it or a local javascript file.
 *  Create a variable `favoriteMovies` that is equal to an array of your 5 favorite movies:
 
 ```js
-//  var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
+var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
-//var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
+var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
 favoriteMovies[2] = "Toy Story 3"
 console.log(favoriteMovies);
 ```
 
 *   How would you remove the last movie from that array?
 ```js
-// var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
+var favoriteMovies = ["Terminator2", "Die Hard", "The Matrix", "Battel Royale", "Hero"];
 favoriteMovies.pop();
 console.log(favoriteMovies);
 ```
@@ -229,7 +229,11 @@ Create an array with the members of the ninja turtles (Donatello, Leonardo, Raph
 Use a for loop to call .toUpperCase() on each of them and print out the result.
 
 ```js
-// your answer here
+var ninJa =["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+ninJa = ninJa.map(function(x){ return x.toUpperCase() })
+for (var i = 0; i < ninJa.length; i++){
+  console.log(ninJa[i]);
+}
 ```
 
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
