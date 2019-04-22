@@ -272,18 +272,12 @@ declare a variable argument and set it equal to 7.
 
 >Ex: `argument` is 7
 
+
+```
 var argument = 7; 
 for (var i = 0; i <= argument ; i++) {
   console.log('#'.repeat(i))
 }
-```
-#
-##
-###
-####
-#####
-######
-#######
 ```
 
 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
