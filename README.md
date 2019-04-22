@@ -44,15 +44,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is (your answer here)
+a is ('bongos')
 ```
 2.  What is `b`?
 ```
-b is (your answer here)
+b is (true;)
 ```
 3.  What is `c`?
 ```
-c is (your answer here)
+c is ('bongos')
 ```
 
 Now run it and don't update your answers above.  Any surprises?  Don't worry about submitting wrong answers, it's all good :3
@@ -74,7 +74,7 @@ Result should be:
 ```
 
 ```js
-// your answer here
+console.log(firstWord + " " + secondWord + " " + thirdWord + " " + fourthWord)
 ```
 
 ## 3 - Variable Assignments
@@ -89,14 +89,14 @@ var num2 = 10;
 Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
-// your solution here
+// var num3 = num1 + num2;
 ```
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log(/* your answer here */)
+console.log('the sum of ' + num1 + ' and ' + num2 + ' is '+ num3)
 ```
 
 ## 4 - Comparisons
@@ -118,14 +118,14 @@ h) 9 !== 8 + 1
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) false
+b)  true
+c) false
+d) false
+e) false
+f) false
+g) true
+h) false
 ```
 
 ### 4b: multi-operator:
@@ -144,14 +144,14 @@ h) (12 !== 12) || (9 !== 8 + 1)
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) true
+b)  false
+c) false
+d) true
+e) true
+f) false
+g) true
+h) false
 ```
 
 ## 5 - Conditionals:
@@ -166,7 +166,23 @@ Feel free to test your code in repl.it or a local javascript file.
 *   - if b is between 75 and 100, print "top quartile"
 
 ```js
-// your answer here
+var b = Math.round(Math.random()* 100)
+
+if (b >= 75) {
+  console.log('top quartile')
+}
+else {
+  if (b >= 50) {
+    console.log('upper quartile')
+  }
+  else {
+    if (b >= 25) {
+      console.log('lower quartile')
+    }
+    else
+    console.log('bottom quartile')
+  }
+}
 ```
 
 ## 6 - Loops:
@@ -177,7 +193,15 @@ Feel free to test your code in repl.it or a local javascript file.
 * For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 ```js
-  // your answer here 
+  var randomStrings =[ '...human...why you taking pictures of me?...','...the catnip made me do it...', '...why does the red dot always get away...']
+
+for (var i=0 ; i<20; i++) {
+if (i % 2 == 0){
+  var k = randomStrings[Math.round(Math.random()*randomStrings.length)];
+console.log ('Love me, pet me! HSSSSSS!' + '\n' + k)}
+else console.log ('Love me, pet me! HSSSSSS!')
+
+}
 ```
 
 ## 7 - Arrays:
@@ -189,18 +213,18 @@ Feel free to test your code in repl.it or a local javascript file.
 *  Create a variable `favoriteMovies` that is equal to an array of your 5 favorite movies:
 
 ```js
-// your answer here
+var favoriteMovies = ['Iron-man', 'Avenger', 'Thor' , 'Frozen', 'End Game'];
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
-// your answer here
+favoriteMovies[2] = 'Toy Story 3'
 ```
 
 *   How would you remove the last movie from that array?
 ```js
-// your answer here
+favoriteMovies.pop();
 ```
 
 ### 7b - Yell at the Ninja Turtles
@@ -211,13 +235,29 @@ Create an array with the members of the ninja turtles (Donatello, Leonardo, Raph
 Use a for loop to call .toUpperCase() on each of them and print out the result.
 
 ```js
-// your answer here
+var ninjaTurtles= ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for (var i=0 ; i<ninjaTurtles.length; i++){
+  ninjaTurtles[i]=ninjaTurtles[i].toUpperCase();
+  console.log (ninjaTurtles[i])
+}
 ```
 
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 ```js
-// not required, but if you want a challenge!
-// your answer here
+var ninjaTurtles= ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for (var i=0 ; i<ninjaTurtles.length; i++){
+  ninjaTurtles[i]=ninjaTurtles[i].toUpperCase();
+  console.log (ninjaTurtles[i])
+  var word = ninjaTurtles[i].toLowerCase().split("");
+  for(var j = 0 ; j<ninjaTurtles[i].length; j=j+2){
+
+     word[j]=word[j].toUpperCase();
+    
+    
+  }
+  console.log (word.join(""))
+  
+}
 ```
 
 ## SUPER BONUSES 
@@ -241,28 +281,58 @@ declare a variable argument and set it equal to 7.
 #####
 ######
 #######
+########
 ```
+
+var argument = 8;
+  var line = "";
+for (var i = 1; i <= argument; i++) {
+
+    for(var j=1; j<=i; j++){ 
+
+      line += "#";
+    }
+
+    line+="\n";
+
+  }
+  console.log(line + "\n");
 
 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
 
 >Ex: `argument` is 7
 
 ```
-      #
-     ##
-    ###
-   ####
-  #####
- ######
-#######
+       #
+      ##
+     ###
+    ####
+   #####
+  ######
+ #######
+########
 ```
 
+var argument = 8;
+  var line = "";
+for (var i = 0; i < argument; i++) {
+
+    for(var j=1; j<=argument; j++){ 
+          if (i+j >= argument )
+           line += "#";
+           else
+           line += " ";
+    }
+    line+="\n";
+  }
+  console.log(line + "\n");
 
 3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
 
 >Ex: `argument` is 7
 
 ```
+########
 #######
 ######
 #####
@@ -272,22 +342,147 @@ declare a variable argument and set it equal to 7.
 #
 ```
 
+var argument = 8;
+  var line = "";
+for (var i = argument; i >= 1; i--) {
+
+    for(var j=1; j<=i; j++){ 
+
+      line += "#";
+    }
+
+    line+="\n";
+
+  }
+
+  console.log(line + "\n");
+
 4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.  This is also tricky.
 
 >Ex: `argument` is 7
 
 ```
-#######
- ######
-  #####
-   ####
-    ###
-     ##
-      #
+########
+ #######
+  ######
+   #####
+    ####
+     ###
+      ##
+       #
 ```
+
+var argument = 8;
+  var line = "";
+for (var i = argument; i > 0; i--) {
+
+    for(var j=0; j<argument; j++){ 
+          if (i+j >= argument )
+           line += "#";
+           else
+           line += " ";
+    }
+    line+="\n";
+  }
+  console.log(line + "\n");
 
 5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
 
+
+var argument = 5;
+  var line = "";
+for (var i = 1; i <= argument; i++) {
+
+    for(var j=1; j<=i; j++){ 
+
+      line += "#";
+    }
+
+    line+="\n";
+
+  }
+ console.log(line + "\n");
+
+  //############
+
+
+
+var argument = 5;
+  var line = "";
+for (var i = 0; i < argument; i++) {
+
+    for(var j=1; j<=argument; j++){ 
+          if (i+j >= argument )
+           line += "#";
+           else
+           line += " ";
+    }
+    line+="\n";
+  }
+  console.log(line + "\n");
+
+  //############
+
+var argument = 5;
+  var line = "";
+for (var i = argument; i >= 1; i--) {
+
+    for(var j=1; j<=i; j++){ 
+
+      line += "#";
+    }
+
+    line+="\n";
+
+  }
+
+  console.log(line + "\n");
+
+
+
+  //############
+
+var argument = 5;
+  var line = "";
+for (var i = argument; i > 0; i--) {
+
+    for(var j=0; j<argument; j++){ 
+          if (i+j >= argument )
+           line += "#";
+           else
+           line += " ";
+    }
+    line+="\n";
+  }
+  console.log(line + "\n");
+  
+  
+#
+##
+###
+####
+#####
+
+
+    #
+   ##
+  ###
+ ####
+#####
+
+
+#####
+####
+###
+##
+#
+
+
+#####
+ ####
+  ###
+   ##
+    #
 
 # Due Date and Time:
 
