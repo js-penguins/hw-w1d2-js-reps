@@ -89,14 +89,15 @@ var num2 = 10;
 Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
-// your solution here
+// var num3 = num1+num2;
 ```
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log(/* your answer here */)
+console.log("The sum of" +" "+ num1 +" "+ "and" +" "+ num2 +" "+ "is" +" "+ summed);
+or console.log("The sum of 5 and 10 is" +" "+ summed);
 ```
 
 ## 4 - Comparisons
