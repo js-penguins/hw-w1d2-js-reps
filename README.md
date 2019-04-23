@@ -265,6 +265,14 @@ declare a variable argument and set it equal to 7.
 >Ex: `argument` is 7
 
 ```
+for(i= 7 ; i > 0 ; i--){
+  var x =" ";
+  for(g = i ; g < 0 ; g--){
+    x += '#';
+  }
+  console.log(x);
+}
+
 #
 ##
 ###
