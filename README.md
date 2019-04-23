@@ -190,20 +190,20 @@ Feel free to test your code in repl.it or a local javascript file.
 * For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 ```js
- var oddNum = "Love me, pet me! HSSSSSS!" ;
+var oddNum = "Love me, pet me! HSSSSSS!" ;
 var evenNum = ["human why you taking pictures of me?", "the catnip made me do it", "why does the red dot always get away"];
 
-evenNum = Math.floor(Math.random()*3)+1;
+
 
 for(var i = 1; i <= 20; i++){
    if (i % 2 === 0){
-    console.log(evenNum );
+    console.log(evenNum[Math.floor(Math.random()*3)+1] );
   }
    else {
     console.log(oddNum);
   }
   }
-```
+  ```
 
 ## 7 - Arrays:
 
