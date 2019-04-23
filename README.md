@@ -167,19 +167,20 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
  var b = Math.floor(Math.random()*100)+1;
- 
-  if (b < 25){
-    console.log("bottom quartile");
-    }
+  
+  if(b < 100, b > 75){
+   console.log("top quartile");
+  }    if ( b < 75 , b > 50){
+   console.log("upper quartile");
+   }
     if ( b < 50 , b > 25){
    console.log("lower quartile");
    }
-    if ( b < 75 , b > 50){
-   console.log("upper quartile");
-   }
- if(b < 100, b > 75){
-        console.log("top quartile");
-  }
+  if (b < 25){
+    console.log("bottom quartile");
+    }
+
+
 ```
 
 ## 6 - Loops:
