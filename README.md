@@ -44,15 +44,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is (your answer here)
+a is (bongos)
 ```
 2.  What is `b`?
 ```
-b is (your answer here)
+b is (true)
 ```
 3.  What is `c`?
 ```
-c is (your answer here)
+c is (bongos)
 ```
 
 Now run it and don't update your answers above.  Any surprises?  Don't worry about submitting wrong answers, it's all good :3
@@ -75,6 +75,12 @@ Result should be:
 
 ```js
 // your answer here
+       var firstWord = "Please";
+       var secondWord = "squeeze";
+       var thirdWord = "the";
+       var fourthWord = "cheese";
+       
+       console.log(firstWord +" "+ secondWord +" "+ thirdWord +" "+ fourthWord);
 ```
 
 ## 3 - Variable Assignments
@@ -82,14 +88,16 @@ Result should be:
 Output a console log `The sum of 5 and 10 is 15` where the values for 5 and 10 are saved to variables, and where 15 comes from those variables being summed.
 
 ```js
-var num1 = 5;
-var num2 = 10;
+       var num1 = 5;
+       var num2 = 10;
+       console.log(num1+num2);
 ```
 
 Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
 // your solution here
+var num3 = num1 + num2;
 ```
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
@@ -97,6 +105,7 @@ Let's do this in parts:
 
 ```js
 console.log(/* your answer here */)
+console.log('The sum of '+ num1 + ' and '+num2+' is '+num3 );
 ```
 
 ## 4 - Comparisons
@@ -118,14 +127,14 @@ h) 9 !== 8 + 1
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) false
+b) true
+c) false
+d) false
+e) false
+f) false
+g) true
+h) false
 ```
 
 ### 4b: multi-operator:
@@ -144,14 +153,14 @@ h) (12 !== 12) || (9 !== 8 + 1)
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) true
+b) false 
+c) false
+d) true
+e) true
+f) true
+g) true
+h) false
 ```
 
 ## 5 - Conditionals:
@@ -167,6 +176,22 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
 // your answer here
+
+        var b = Math.round(Math.random()*100);
+        console.log(b);
+        if(b<25)
+        {
+            console.log('bottom quartile');
+        }
+        else if(b>=25 && b<50){
+            console.log('lower quartile');
+        }
+        else if(b>=50 && b<75){
+            console.log('upper quartile');
+        }
+        else {
+            console.log('top quartile');
+        }
 ```
 
 ## 6 - Loops:
@@ -178,6 +203,14 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
   // your answer here 
+        for(var i=0;i<20;i++)
+        {
+            console.log("Love me, pet me! HSSSSSS!" );
+            if(i +=1){
+              console.log("...human...why you taking pictures of me?...", 
+              "...the catnip made me do it..." );
+            }
+        }
 ```
 
 ## 7 - Arrays:
@@ -190,17 +223,21 @@ Feel free to test your code in repl.it or a local javascript file.
 
 ```js
 // your answer here
+       var favoriteMovies=["titanic","prison break",
+       "what is left of you","seni seviyorum","gumus"];
 ```
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
 // your answer here
+favoriteMovies[2]='Toy Story 3';
 ```
 
 *   How would you remove the last movie from that array?
 ```js
 // your answer here
+favoriteMovies.pop();
 ```
 
 ### 7b - Yell at the Ninja Turtles
@@ -212,6 +249,13 @@ Use a for loop to call .toUpperCase() on each of them and print out the result.
 
 ```js
 // your answer here
+      var ninja_turtles=['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+      for(var i=0;i<ninja_turtles.length;i++)
+      {
+        ninja_turtles.toUpperCase();
+        console.log(ninja_turtles);
+         
+      }
 ```
 
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
@@ -292,4 +336,3 @@ declare a variable argument and set it equal to 7.
 # Due Date and Time:
 
 Your javascript exercises are due at 2am!
-
